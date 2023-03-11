@@ -7,5 +7,5 @@ streamlit.header('🥣 🥗 🐔 🥑🍞Breakfast Menu')
 streamlit.text('Omega3')
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 Fruits_selected=streamlit.multiselect("pick fruits here:", list(my_fruit_list.index),['Avocado','Strawberries'])
-Fruits_to_show=my_fruit_list.loc[Fruit_selected]
+Fruits_to_show=my_fruit_list.loc[Fruits_selected]
 streamlit.dataframe(Fruits_to_show)
